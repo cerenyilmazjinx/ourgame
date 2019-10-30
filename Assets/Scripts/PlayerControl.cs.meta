@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 02e052f540d327745b875334f81ddf15
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - myrigitbody: {fileID: 50602492150139770, guid: da55763bf39929642b818df8865d5ad0,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
