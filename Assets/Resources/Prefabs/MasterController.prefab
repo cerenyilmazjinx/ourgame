@@ -135,6 +135,7 @@ MonoBehaviour:
   inGameController: {fileID: 6299678807376703015}
   initController: {fileID: 1731640441261480699}
   lobbyController: {fileID: 1929783097215074485}
+  roomListController: {fileID: 8915794948037390964}
 --- !u!1 &5003320531659534284
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,6 +166,7 @@ Transform:
   - {fileID: 5290424583450855028}
   - {fileID: 5348179533342635625}
   - {fileID: 7023485154014637019}
+  - {fileID: 3375746345760402898}
   m_Father: {fileID: 2354302176191605516}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -209,6 +211,50 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a4dea0014a33114389c41edd43c1810, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  masterController: {fileID: 505471669150486370}
+--- !u!1 &6362622676631625395
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3375746345760402898}
+  - component: {fileID: 8915794948037390964}
+  m_Layer: 0
+  m_Name: RoomListController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &3375746345760402898
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6362622676631625395}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3859413736257807648}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8915794948037390964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6362622676631625395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38582d62fe5461c40908c574226cc30d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   masterController: {fileID: 505471669150486370}

@@ -1,29 +1,33 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using Photon.Pun;
 using UnityEngine;
 
-public class InitController : MonoBehaviour
+public class InitController : MonoBehaviourPunCallbacks
 {
-    [SerializeField]
-    private MasterController masterController;
-
     void Start()
     {
-        
     }
 
     void Update()
     {
-        
     }
 
-    void OnEnable()
+    public override void OnEnable()
     {
-        
+        if (!PhotonNetwork.IsConnected)
+        {
+            Debug.Log("PhotonNetwork.ConnectUsingSettings()");
+            PhotonNetwork.ConnectUsingSettings();
+        }
     }
 
-    void OnDisable()
+    public override void OnDisable()
     {
-        
+
+    }
+
+    public override void OnConnectedToMaster()
+    {
+        Debug.Log("OnConnectedToMaster");
+        MasterController.singleton.StartController(MasterController.singleton.roomListController);
     }
 }

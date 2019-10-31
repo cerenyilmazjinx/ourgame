@@ -5,13 +5,18 @@ using UnityEngine;
 
 public class MasterController : MonoBehaviour
 {
+    public static MasterController singleton;
+
     public InGameController inGameController;
     public InitController initController;
     public LobbyController lobbyController;
+    public RoomListController roomListController;
 
     private List<MonoBehaviour> controllers;
     void Start()
     {
+        singleton = this;
+
         controllers = new List<MonoBehaviour>{
             inGameController,
             initController,
