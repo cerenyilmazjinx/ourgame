@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.Networking;
 
-public class PlayerControl : NetworkBehaviour
+public class PlayerControl : MonoBehaviour
 {
     public float upForce;
     private bool isDead = false;
@@ -14,11 +14,10 @@ public class PlayerControl : NetworkBehaviour
 
         rb2d = GetComponent<Rigidbody2D>();
     }
-    [ClientCallback]
+    
     void Update()
     {
-        if (!isLocalPlayer)
-            return;
+      
 
         if (isDead == false)
         {
